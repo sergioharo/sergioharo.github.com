@@ -1,0 +1,13 @@
+---
+layout: post
+---
+
+    {{ content }}
+
+<ul class="gallery">
+    {% PhotoGallery %}
+    <li class="gallery-item">
+		<img class="gallery-img" src="{{file.url}}" />
+	</li>
+	{% endPhotoGallery %}
+</ul>

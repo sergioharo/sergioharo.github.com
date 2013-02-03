@@ -3,6 +3,7 @@ layout: gallery
 title: Camping at Blake Island
 photosDir: /photos/2009/blake-island
 image: /photos/2009/blake-island/img_4302.jpg
+category: gallery
 ---
 This year we decided to join our friends at the Washington Yacht Club on their yearly camping/sailing trip. This year the trip was to Blake Island, a small island in the Puget Sound overlooking Seattle.
 

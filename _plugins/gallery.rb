@@ -19,7 +19,7 @@ module Jekyll
 
       context.registers[:gallery] ||= Hash.new(0)
 
-      files = Dir[File.join(photos_dir, "*.{jpg,png,gif}")]
+      files = Dir[File.join(photos_dir, "*.{jpg,png,gif,jpeg}")]
       files.sort! {|x,y| x.length == y.length ? x <=> y : x.length <=> y.length }
       length = files.length
       result = []

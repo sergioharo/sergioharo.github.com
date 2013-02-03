@@ -41,6 +41,25 @@ header .banner {
     text-decoration: none;
 }
 
+nav {
+	margin: 0 auto;
+	width: 900px;
+	padding-top: 160px;
+}
+
+nav > a {
+	height: 30px;
+	display: inline-block;
+	line-height: 30px;
+	font-size: 18px;
+	padding-right: 1em;
+	color: white;
+}
+
+nav > a:hover {
+	color: white;
+}
+
 /* @end */
 
 /* @group Content */

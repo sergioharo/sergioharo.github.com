@@ -5,23 +5,7 @@ title: HungryBear
 <div class="container">
     <ul class="posts">
       {% for post in site.posts %}
-      <li class="entry">
-      	<a class="title" href="{{ post.url }}">{{ post.title }} <span class="date">{{ post.date | date: "%B %e, %Y" }}</span></a>
-		<div class="content">
-      {% if post.image %}
-        <a href="{{ post.url }}" class="gallery-item-block">
-          <img class="gallery-img" src="{{post.image}}" />
-        </a>
-      {% else %}
-        {% capture stripped %}{{ post.content | strip_html }}{% endcapture %}
-        {% capture description %}{{ stripped | truncatewords: 55 }}{% endcapture %}
-        <p>{{ description }}</p>
-        {% if (description.size) < (stripped.size) %}
-          <div><a href="{{ post.url }}">Read more ...</a></div>
-        {% endif %}
-      {% endif %}
-		</div>
-      </li>
+        {% include single_post_snippet.html %}
       {% endfor %}
     </ul>
 </div>

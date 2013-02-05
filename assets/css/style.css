@@ -2,7 +2,7 @@
 
 html, body {
 	background-color: #262626;
-	height: 100%;
+	position: relative;
 }
 
 /* @end */
@@ -29,21 +29,24 @@ header .bear {
     margin-left: 100px;
 }
 
-header .banner {
-    font-size: 80px; 
-    position: absolute; 
-    top: 20px;
-    left: 50%;
-    margin-left: -400px;
+.banner {
+	font-size: 80px; 
     line-height: 100%; 
     color: #FFF;
     font-weight: bold; 
     text-decoration: none;
 }
 
+header .banner {
+    position: absolute; 
+    top: 20px;
+    left: 50%;
+    margin-left: -400px;
+}
+
 nav {
 	margin: 0 auto;
-	width: 900px;
+	width: 940px;
 	padding-top: 160px;
 }
 
@@ -65,9 +68,7 @@ nav > a:hover {
 /* @group Content */
 
 .container {
-	margin: auto;
-	margin-bottom: 20px;
-	width: 900px;
+	padding-bottom: 20px;
 }
 
 .posts {
@@ -112,6 +113,12 @@ nav > a:hover {
 	margin-top: .5em;
 }
 
+.category {
+	color: #aaa;
+	margin: 0 0 16px 0;
+	line-height: 1em;
+}
+
 /* @end */
 
 /* @group Content */
@@ -147,5 +154,15 @@ nav > a:hover {
 
 .caption { 
 	margin-top: .5em;
+}
+/* @end */
+
+/* @group Footer */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #AAA;
 }
 /* @end */

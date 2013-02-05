@@ -167,7 +167,6 @@ module Jekyll
         if !excluded?(page.name)
           path = page.full_path_to_source
           if page.pager.nil? || page.pager.page == 1
-            puts path
             url = fill_url(site, page)
             urlset.add_element(url)
           end

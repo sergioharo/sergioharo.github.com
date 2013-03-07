@@ -37,6 +37,11 @@ header .bear {
     text-decoration: none;
 }
 
+a.banner:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+}
 header .banner {
     position: absolute; 
     top: 20px;
@@ -46,7 +51,7 @@ header .banner {
 
 nav {
 	margin: 0 auto;
-	width: 940px;
+	width: 900px;
 	padding-top: 160px;
 }
 
@@ -69,6 +74,7 @@ nav > a:hover {
 
 .container {
 	padding-bottom: 20px;
+	width: 900px;
 }
 
 .posts {

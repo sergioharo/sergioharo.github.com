@@ -1,0 +1,174 @@
+/* @group General Settings */
+
+html, body {
+	background-color: #262626;
+	position: relative;
+}
+
+/* @end */
+
+/* @group Header */
+
+header {
+	background: #7C987D;
+	height: 160px;
+	width: 100%;
+	border-bottom: 30px solid #333;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, .3);
+    position: relative;
+    margin-bottom: 2em;
+}
+
+header .bear {
+    background: url(/assets/img/bear.png) no-repeat; 
+    height: 165px; 
+    width: 285px; 
+    position: absolute; 
+    top: 19px; 
+    left: 50%;
+    margin-left: 100px;
+}
+
+.banner {
+	font-size: 80px; 
+    line-height: 100%; 
+    color: #FFF;
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+a.banner:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+}
+header .banner {
+    position: absolute; 
+    top: 20px;
+    left: 50%;
+    margin-left: -400px;
+}
+
+nav {
+	margin: 0 auto;
+	width: 900px;
+	padding-top: 160px;
+}
+
+nav > a {
+	height: 30px;
+	display: inline-block;
+	line-height: 30px;
+	font-size: 18px;
+	padding-right: 1em;
+	color: white;
+}
+
+nav > a:hover {
+	color: white;
+}
+
+/* @end */
+
+/* @group Content */
+
+.container {
+	padding-bottom: 20px;
+	width: 900px;
+}
+
+.posts {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.entry {
+	margin: 0 0 24px 0;
+	padding: 16px 24px;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+	position: relative;
+	overflow: hidden;
+}
+
+.entry .title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #333;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	line-height: 1em;
+}
+
+.entry .title .date {
+	color: #999;
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	line-height: 1;
+	font-weight: normal;
+}
+
+.entry .content {
+	padding: .75em 0 0 0;
+	border-top: 1px dashed #CCC;
+	margin-top: .5em;
+}
+
+.category {
+	color: #aaa;
+	margin: 0 0 16px 0;
+	line-height: 1em;
+}
+
+/* @end */
+
+/* @group Content */
+.gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.gallery-item-block {
+	margin: 1em 0;
+	text-align: center;
+	display: block;
+}
+
+.gallery-item {
+	margin: 1em 0;
+	text-align: center;
+}
+
+.gallery-link {
+	display: block;
+}
+
+.gallery-img {
+	margin: 0;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	box-shadow: 0 1px 5px #000;
+}
+
+.caption { 
+	margin-top: .5em;
+}
+/* @end */
+
+/* @group Footer */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #AAA;
+}
+/* @end */

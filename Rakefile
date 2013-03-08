@@ -6,6 +6,7 @@ Bundler.require
 
 # Change your GitHub reponame
 GITHUB_REPONAME = "sergioharo/sergioharo.github.com"
+GITHUB_MASTER_FOLDER = File.join(Dir.home(), "/Developer/git/sergioharo.github.com")
 
 desc "Generate blog files"
 task :generate do
@@ -17,15 +18,17 @@ end
 
 desc "Generate and publish blog to github"
 task :publish => [:generate] do
-  Dir.mktmpdir do |tmp|
-    cp_r "_site/.", tmp
-    Dir.chdir tmp
-    system "touch .nojekyll"
-    system "git init"
-    system "git add ."
+  Dir.chdir GITHUB_MASTER_FOLDER do
+    system "git checkout master"
+    system "git pull"
+  end
+
+  cp_r "_site/.", GITHUB_MASTER_FOLDER
+
+  Dir.chdir GITHUB_MASTER_FOLDER do
     message = "Site updated at #{Time.now.utc}"
+    system "git add ."
     system "git commit -m #{message.shellescape}"
-    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    system "git push origin master --force"
+    system "git push origin master"
   end
 end

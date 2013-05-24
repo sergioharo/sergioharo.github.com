@@ -3,6 +3,7 @@
 html, body {
 	background-color: #262626;
 	position: relative;
+	font-family: "Lucida Grande","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 /* @end */
@@ -35,6 +36,7 @@ header .bear {
     color: #FFF;
     font-weight: bold; 
     text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 a.banner:hover {
@@ -51,7 +53,7 @@ header .banner {
 
 nav {
 	margin: 0 auto;
-	width: 900px;
+	width: 872px;
 	padding-top: 160px;
 }
 
@@ -74,7 +76,7 @@ nav > a:hover {
 
 .container {
 	padding-bottom: 20px;
-	width: 900px;
+	width: 872px;
 }
 
 .posts {
@@ -85,7 +87,7 @@ nav > a:hover {
 
 .entry {
 	margin: 0 0 24px 0;
-	padding: 16px 24px;
+	padding: 26px 36px 36px 36px;
 	border-radius: 10px;
 	background-color: #F5F5F5;
 	position: relative;
@@ -135,7 +137,7 @@ nav > a:hover {
 }
 
 .gallery-item-block {
-	margin: 1em 0;
+	margin: 1em 0 0 0;
 	text-align: center;
 	display: block;
 }
@@ -143,6 +145,10 @@ nav > a:hover {
 .gallery-item {
 	margin: 1em 0;
 	text-align: center;
+}
+
+.gallery-item:last-child {
+	margin-bottom: 0;
 }
 
 .gallery-link {

@@ -6,7 +6,7 @@ Bundler.require
 
 # Change your GitHub reponame
 GITHUB_REPONAME = "sergioharo/sergioharo.github.com"
-GITHUB_MASTER_FOLDER = File.join(Dir.home(), "/Developer/git/sergioharo.github.com")
+GITHUB_MASTER_FOLDER = File.join(Dir.home(), "/Sites/sergioharo.github.com")
 
 desc "Generate blog files"
 task :generate do

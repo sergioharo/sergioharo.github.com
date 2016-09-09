@@ -2,6 +2,8 @@
 layout: gallery
 title: Save the Date
 photosDir: /photos/2011/save-the-date
+image: /photos/2011/save-the-date/Postcard_Front.jpg
+published: true
 ---
 We just ordered our first wedding expense, the “Save the Date” cards we’ll be mailing out to people. I worked on the design for a few weeks before finalizing on the cards. They’re based on an initial design by Julie’s sister, Nancy.
 
